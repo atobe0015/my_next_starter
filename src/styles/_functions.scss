@@ -1,0 +1,12 @@
+@function vw($value) {
+  $rate: 100 / $designWidthSP;
+  @return $rate * $value * 1vw;
+}
+
+@function rem($value) {
+  @return ($value / $baseFontSize) * 1rem;
+}
+
+@function aspect($origin, $compare) {
+  @return ($origin / $compare) * 100%;
+}

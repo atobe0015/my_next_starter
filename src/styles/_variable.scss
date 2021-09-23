@@ -1,0 +1,47 @@
+$designWidthPC: 1366;
+$designWidthSP: 375;
+$baseFontSize: 16;
+
+$c_main: #5ca7be;
+$c_sub: #e9f1f7;
+
+// text.bg,bdに当てはまっていないものを単純に色設定したいときは下記のように
+$c_white: #fff;
+$c_blue: #5171b5;
+$c_gray: #898989;
+$c_black: #191a1d;
+
+// textの色にまつわる設定設定
+$c_text_base: #191a1d;
+$c_text_sub: #bababa;
+$c_text_link: #898989;
+$c_text_link_active: #5ca7be;
+$c_text_placeholder: #898989;
+$c_text_alert: #ff5858;
+$c_text_success: #035800;
+
+// backgroundの色にまつわる設定
+$c_bg_base: #f4f4f4;
+$c_bg_sub: #fafafa;
+$c_bg_owner: #5d5d5d;
+$c_bg_in_active: #f2f2f2;
+$c_bg_error: #fff0ed;
+$c_bg_success: #effff7;
+$c_bg_alert: #fff7f7;
+
+// backgroundの色にまつわる設定
+$c_bd_base: #bababa;
+$c_bd_alert: #ff5858;
+$c_bd_in_active: #f2f2f2;
+
+$screen-md-max: 1024px;
+$screen-xs-max: 767px;
+
+$font_base: 'Helvetica', -apple-system, BlinkMacSystemFont, Arial, Meiryo,
+  sans-serif;
+
+$gap: 8;
+$radius: rem(8) rem(8) rem(8) rem(8);
+
+@import '_mixins';
+@import '_functions';

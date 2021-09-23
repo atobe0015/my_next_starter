@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '_variable';
+@import '_utils';
+@import '_layouts';
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: vw($baseFontSize);
+  @include mq(md) {
+    font-size: 16px;
+  }
+}
+
+body {
+  @apply font-app;
+  font-size: rem(14);
+  font-feature-settings: 'palt' 1;
+  color: $c_text_base;
+  letter-spacing: 0.075em;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-shadow {
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.bg-logo-gradient {
+  background-image: linear-gradient(
+    to right bottom,
+    #6eebff 0%,
+    #ffaa00 25%,
+    #ffe000 66%,
+    #fffa50 100%
+  );
+}

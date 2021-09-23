@@ -1,0 +1,45 @@
+openapi: 3.0.3
+info:
+  title: API_sample
+  version: '1.0'
+  description: サンプルswagger
+  contact:
+    name: atobe
+servers:
+  - url: 'http://localhost:3000/api'
+    description: next_api_path--local
+paths:
+  /dummy:
+    parameters: []
+    get:
+      summary: Get User Info by User ID
+      tags: []
+      responses:
+        '200':
+          description: Dummy Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dummy'
+              examples: {}
+        '404':
+          description: User Not Found
+      operationId: get-dummy
+      description: ダミーエンドポイントの定義
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: id
+          required: true
+components:
+  schemas:
+    Dummy:
+      title: Dummy
+      type: object
+      description: ダミーレスポンスの定義
+      properties:
+        id:
+          type: string
+      required:
+        - id

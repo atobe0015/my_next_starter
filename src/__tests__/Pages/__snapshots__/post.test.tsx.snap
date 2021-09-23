@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`投稿テスト 1`] = `
+<div>
+  <div
+    class="grid place-content-center h-screen"
+  >
+    <div
+      class="text-center"
+    >
+      welcome, 
+      あなたの名前
+    </div>
+  </div>
+</div>
+`;
